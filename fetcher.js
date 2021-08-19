@@ -13,7 +13,7 @@ const saveFile = () => {
       process.exit();
     }
 
-    if(response.statusCode !== 200) {
+    if (response.statusCode !== 200) {
       console.log(`An error has occured with the link. Status code: ${response.statusCode}. File not written.`);
       process.exit();
     }
@@ -32,10 +32,9 @@ const saveFile = () => {
 // Check if there is a file name error
 if (!fileName.includes('./')) {
   console.log("File name error. Missing './' for local drive");
-  // rl.close();
-};
+}
 
-if(!fileName.includes('.html')) {
+if (!fileName.includes('.html')) {
   console.log("File name error. Missing '.html' for file extension");
   // rl.close();
 }

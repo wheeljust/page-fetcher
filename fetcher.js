@@ -36,7 +36,6 @@ if (!fileName.includes('./')) {
 
 if (!fileName.includes('.html')) {
   console.log("File name error. Missing '.html' for file extension");
-  // rl.close();
 }
 
 // Check for file name, if found prompt the user to input Y yto overwrite the file.
